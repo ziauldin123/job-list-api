@@ -29,16 +29,18 @@ from rest_framework import generics
 #         return Contact.objects.filter(owner=self.request.user)
 
 class JobList(ListCreateAPIView):
-
     serializer_class = JobSerializer
+    queryset = Job.objects.all()
+    
     # permission_classes = (permissions.IsAuthenticated,)
 
-    def perform_create(self, serializer):
-        serializer.save(self)
+    # def perform_create(self, serializer):
+    #     user = self.request.user
+    #     serializer.save(user=user)
 
-    def get_queryset(self):
-        # return Job.objects.filter(self)
-        return Job.objects.all()
+    # def get_queryset(self):
+    #     # return Job.objects.filter(self)
+        # return Job.objects.all()
 
 
 class JobDetailView(RetrieveUpdateDestroyAPIView):
