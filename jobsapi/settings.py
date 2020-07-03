@@ -55,6 +55,9 @@ SWAGGER_SETTINGS = {
     }
 }
 
+LOGIN_URL = '/admin/'
+LOGOUT_URL = '/admin/logout/'
+
 # SWAGGER_SETTINGS = {
 #     "exclude_namespaces": [], # List URL namespaces to ignore
 #     "api_version": '0.1',  # Specify your API's version
@@ -182,6 +185,7 @@ CORS_ALLOW_HEADERS = (
 
 # JWT
 JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
