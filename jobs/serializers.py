@@ -13,6 +13,6 @@ from .models import Job
 class JobSerializer(ModelSerializer):
     class Meta:
         model = Job
-        fields = ['title', 'description', 'location', 'jtype', 'category', 'post_image', 'last_date','company_name', 'company_description', 'website', 'created_at', 'status', 'posts', 'required_exp']
+        fields = ['id','title', 'description', 'location', 'jtype', 'category', 'post_image', 'last_date','company_name', 'company_description', 'website', 'created_at', 'status', 'posts', 'required_exp']
         # fields = '__all__'
         list_display = ['title', 'description', 'location', 'jtype', 'category', 'post_image', 'last_date','company_name', 'company_description', 'website', 'created_at', 'status', 'posts', 'required_exp']
