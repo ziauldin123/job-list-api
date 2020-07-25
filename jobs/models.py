@@ -17,12 +17,13 @@ EXP_TYPE = (
     ('11', "10 Year")
 )
 JOB_TYPE = (
-    ('1', "FPSC"),
-    ('2', "PPSC"),
-    ('3', "NTS"),
-    ('4', "PAK ARMY"),
-    ('5', "PAK NAVY"),
-    ('6', "PAK AIR FORCE")    
+    ('1', "GOVT"),
+    ('2', "FPSC"),
+    ('3', "PPSC"),
+    ('4', "NTS"),
+    ('5', "PAK ARMY"),
+    ('6', "PAK NAVY"),
+    ('7', "PAK AIR FORCE")    
 )
 
 class Job(models.Model):     
