@@ -30,7 +30,7 @@ from rest_framework import generics
 
 class JobList(ListCreateAPIView):
     serializer_class = JobSerializer
-    queryset = Job.objects.all()
+    queryset = Job.objects.order_by('-last_date')
     
     # permission_classes = (permissions.IsAuthenticated,)
 
