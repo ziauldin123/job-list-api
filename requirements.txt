@@ -17,7 +17,6 @@ Django==3.0.5
 django-allauth==0.42.0
 django-cors-headers==3.4.0
 django-filter==2.3.0
-django-filters==0.2.1
 django-heroku==0.3.1
 django-mysql==3.7.1
 djangorestframework==3.11.0
