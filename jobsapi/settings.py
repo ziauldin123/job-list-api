@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'bf!_2d#h%jiriueb56a$$fo^5p*-)a2p!b_j24tk$l3525y6fg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -206,6 +206,6 @@ STATICFILES_DIRS = [
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-MEDIA_URL = '/app/media/'
+MEDIA_URL = '/media/'
 
 django_heroku.settings(locals())
