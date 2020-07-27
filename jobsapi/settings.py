@@ -159,7 +159,7 @@ USE_TZ = True
 
 # CORS
 CORS_ORIGIN_ALLOW_ALL = True
-ALLOWED_HOSTS = ['*']
+
 
 CORS_ALLOW_METHODS = (
     'DELETE',
@@ -190,6 +190,11 @@ JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+SESSION_COOKIE_SECURE=True
+CSRF_COOKIE_SECURE=True
+SECURE_SSL_REDIRECT=True
+
+
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
@@ -201,6 +206,6 @@ STATICFILES_DIRS = [
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-MEDIA_URL = '/media/'
+MEDIA_URL = '/app/media/'
 
 django_heroku.settings(locals())
