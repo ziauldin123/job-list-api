@@ -38,7 +38,7 @@ more-itertools==8.4.0
 mysqlclient==1.4.6
 oauthlib==3.1.0
 packaging==20.4
-Pillow==7.1.2
+Pillow==9.0.0
 pluggy==0.13.1
 psycopg2==2.8.5
 ptvsd==4.3.2
